@@ -1,11 +1,24 @@
 @layer components {
-  .btn {
-    @apply px-3 py-2  rounded-md;
+  .btn-solid {
+    @apply px-3 py-2 font-semibold text-white rounded-md;
+    @apply bg-purple-400 hover:bg-purple-500 focus:bg-purple-500;
+    @apply transition-all;
   }
-  .btn-primary {
+  .btn-outline {
+    @apply px-3 py-2 font-semibold text-green-600 rounded-md;
+    @apply bg-green-500 bg-opacity-10 hover:bg-opacity-40 focus:bg-opacity-40;
+    @apply border border-green-600;
+    @apply transition-all;
+  }
+  .btn-ghost {
+    @apply px-3 py-2 font-semibold text-orange-600 rounded-md;
+    @apply bg-orange-500 bg-opacity-0 hover:bg-opacity-40 focus:bg-opacity-40;
+    @apply transition-all;
+  }
+  /* .btn-primary {
     @apply bg-purple-400;
   }
   .btn-danger {
     @apply bg-red-500;
-  }
+  } */
 }

@@ -13,7 +13,11 @@ function App() {
         <button className="btn btn-primary">This is a button</button>
         <button className="btn btn-danger">This is a button 2</button> */}
 
-        <Button outline={true} />
+        <div className="w-96 border border-red-500 p-10">
+          <Button variant="outline" className="w-full">
+            Click
+          </Button>
+        </div>
       </div>
     </Container>
   );
